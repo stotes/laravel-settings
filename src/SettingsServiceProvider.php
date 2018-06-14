@@ -35,15 +35,14 @@ class SettingsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/config/settings.php', 'settings'
+            __DIR__ . '/config/settings.php',
+            'settings'
         );
         $this->app->singleton('settings', function ($app) {
-
             $config = $app->config->get('settings', [
                 'cache_file' => storage_path('settings.json'),
                 'db_table'   => 'settings'
             ]);
-
             return new Settings($app['db'], new Cache($config['cache_file']), $config);
         });
     }
@@ -56,7 +55,6 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array ('settings');
+        return array('settings');
     }
-
 }
