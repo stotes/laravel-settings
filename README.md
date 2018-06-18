@@ -1,7 +1,7 @@
-[![Latest Stable Version](https://poser.pugx.org/efriandika/laravel-settings/v/stable.svg)](https://packagist.org/packages/efriandika/laravel-settings) 
-[![Total Downloads](https://poser.pugx.org/efriandika/laravel-settings/downloads.svg)](https://packagist.org/packages/efriandika/laravel-settings) 
-[![Latest Unstable Version](https://poser.pugx.org/efriandika/laravel-settings/v/unstable.svg)](https://packagist.org/packages/efriandika/laravel-settings) 
-[![License](https://poser.pugx.org/efriandika/laravel-settings/license.svg)](https://packagist.org/packages/efriandika/laravel-settings)
+[![Latest Stable Version](https://poser.pugx.org/Stotes/laravel-settings/v/stable.svg)](https://packagist.org/packages/Stotes/laravel-settings) 
+[![Total Downloads](https://poser.pugx.org/Stotes/laravel-settings/downloads.svg)](https://packagist.org/packages/Stotes/laravel-settings) 
+[![Latest Unstable Version](https://poser.pugx.org/Stotes/laravel-settings/v/unstable.svg)](https://packagist.org/packages/Stotes/laravel-settings) 
+[![License](https://poser.pugx.org/Stotes/laravel-settings/license.svg)](https://packagist.org/packages/Stotes/laravel-settings)
 
 # Laravel-Settings
 Laravel 5.1.x Persistent Settings (Database + Cache)  
@@ -9,36 +9,36 @@ Laravel 5.1.x Persistent Settings (Database + Cache)
 ### Attention: for update to v1.2.0
 Re-Publish new migration file
 
-    $ php artisan vendor:publish --provider="Efriandika\LaravelSettings\SettingsServiceProvider" --force
+    $ php artisan vendor:publish --provider="Stotes\LaravelSettings\SettingsServiceProvider" --force
     
 And run
 
     $ php artisan migrate
 
 ## How to Install
-Require this package with composer ([Packagist](https://packagist.org/packages/efriandika/laravel-settings)) using the following command:
+Require this package with composer ([Packagist](https://packagist.org/packages/Stotes/laravel-settings)) using the following command:
 
-    composer require efriandika/laravel-settings
+    composer require Stotes/laravel-settings
 
 or modify your `composer.json`:
    
        "require": {
-          "efriandika/laravel-settings": "1.*"
+          "Stotes/laravel-settings": "1.*"
        }
        
 then run `composer update`:
 
 After updating composer, Register the ServiceProvider to the `providers` array in `config/app.php`
 
-    'Efriandika\LaravelSettings\SettingsServiceProvider',
+    'Stotes\LaravelSettings\SettingsServiceProvider',
     
 Add an alias for the facade to `aliases` array in  your `config/app.php`
 
-    'Settings'  => Efriandika\LaravelSettings\Facades\Settings::class,
+    'Settings'  => Stotes\LaravelSettings\Facades\Settings::class,
 
 Publish the config and migration files now (Attention: This command will not work if you don't follow previous instruction):
 
-    $ php artisan vendor:publish --provider="Efriandika\LaravelSettings\SettingsServiceProvider" --force
+    $ php artisan vendor:publish --provider="Stotes\LaravelSettings\SettingsServiceProvider" --force
     
 Change `config/settings.php` according to your needs. If you change `db_table`, don't forget to change the table's name
 in the migration file as well.

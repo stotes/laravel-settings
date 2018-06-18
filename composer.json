@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Efriandika Pratama",
-            "email": "efriandika@gmail.com"
+            "name": "Adam Stotes",
+            "email": "Stotes@gmail.com"
         }
     ],
     "require": {
@@ -27,7 +27,7 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Efriandika\\LaravelSettings\\": "src/"
+            "Stotes\\LaravelSettings\\": "src/"
         }
     }
 }

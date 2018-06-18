@@ -1,5 +1,5 @@
 <?php
-use Efriandika\LaravelSettings\Cache;
+use Stotes\LaravelSettings\Cache;
 
 class CacheTest extends PHPUnit_Framework_TestCase
 {

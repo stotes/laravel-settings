@@ -1,13 +1,13 @@
 <?php
 
-use Efriandika\LaravelSettings\Facades\Settings;
+use Stotes\LaravelSettings\Facades\Settings;
 
 if (!function_exists('settings'))
 {
     /**
      * @param string|null $key
      * @param null $default
-     * @return mixed|\Efriandika\LaravelSettings\Facades\Settings
+     * @return mixed|\Stotes\LaravelSettings\Facades\Settings
      */
     function settings($key = null, $default = null)
     {

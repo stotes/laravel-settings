@@ -1,4 +1,4 @@
-<?php namespace Efriandika\LaravelSettings;
+<?php namespace Stotes\LaravelSettings;
 
 use Illuminate\Support\ServiceProvider;
 

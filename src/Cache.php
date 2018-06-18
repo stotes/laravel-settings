@@ -1,8 +1,8 @@
-<?php namespace Efriandika\LaravelSettings;
+<?php namespace Stotes\LaravelSettings;
 
 /**
  * Class Cache
- * @package Efriandika\LaravelSettings
+ * @package Stotes\LaravelSettings
  */
 class Cache
 {

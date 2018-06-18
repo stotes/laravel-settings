@@ -1,4 +1,4 @@
-<?php namespace Efriandika\LaravelSettings\Facades;
+<?php namespace Stotes\LaravelSettings\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
